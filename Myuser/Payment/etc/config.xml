@@ -1,0 +1,18 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+  <default>
+      <payment>
+          <myuserpayment>
+              <active>1</active>
+              <model>Myuser\Payment\Model\Payment</model>
+              <payment_action>authorize_capture</payment_action> 
+              <title>My User Payment Gateway</title>
+              <merchant_key>merchant_key</merchant_key>
+              <api_key_public>api_key_public</api_key_public>
+              <api_key_secret>api_key_secret</api_key_secret>
+              <cctypes>AE,VI,MC,DI,JCB</cctypes>
+              <allowspecific>0</allowspecific>
+              <min_order_total>1</min_order_total>
+          </myuserpayment>
+     </payment>
+  </default>
+</config>
